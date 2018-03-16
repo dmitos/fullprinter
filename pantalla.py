@@ -8,7 +8,19 @@ init(convert=True)
 
 
 class Color:
-    pass
+    f = '\033['
+    defecto = '0;'
+    Negrita = '1;'
+    Cursiva = '3;'
+    Inverso = '5;'
+    Negro = '30'
+    Rojo = '31'
+    Verde = '32'
+    Azul = '34'
+    Morado = '35'
+    Cian = '36'
+    Blanco = '37'
+    cierre = '\033[0;m'
 
 
 class Pantalla:
