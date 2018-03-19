@@ -9,19 +9,20 @@ os.system('cls')
 C.init(convert=True)
 
 
-class Color:
+class Color():
     f = '\033['
     defecto = '0;'
     Negrita = '1;'
     Cursiva = '3;'
     Inverso = '5;'
     Negro = '30m'
-    Rojo = '31m'
+    Rojo = '31'
     Verde = '32m'
-    Azul = '34m'
+    Azul = '34'
     Morado = '35m'
     Cian = '36m'
     Blanco = '37m'
+    FVerde = ';42m'
     cierre = '\033[0;m'
 
     def rojo(string):
@@ -32,10 +33,10 @@ class Pantalla:
     def pos(x, y):
         return '\x1b[' + str(y) + ';' + str(x) + 'H'
 
-    def titulo(texto, col=1, fila=1, linea="─", estilo='0;', color='37m'):
-        if fila == 0:
+    def titulo(texto, col=1, fila=1, linea="─", estilo='0;', color='37', fondo='m'):
+        if fila < 1 or fila > 40:
             fila = 1
-        if col == 0:
+        if col < 1:  # ver la solucion para que el texsto siempre tenga lineas arriba 
             col = 1
         texto = texto.upper()
         sizecol = DimPan.ObtTamTer()
@@ -44,7 +45,7 @@ class Pantalla:
         LarTex = len(texto)
         centrar = int((sizecol[0][0] - LarTex) / 2)
         print(Pantalla.pos(col, fila), linea * largot)
-        print(Pantalla.pos(centrar, fila + 1), str(Color.f) + estilo + color + texto + '\033[0;m')
+        print(Pantalla.pos(centrar, fila + 1), str(Color.f) + estilo + color + fondo + texto + '\033[0;m')
         print(Pantalla.pos(col, fila + 2), linea * largot)
 
     def encabezado(texto):
@@ -53,14 +54,14 @@ class Pantalla:
         texto = texto.capitalize()
         LarTex = len(texto)
         izquierda = int(sizecol[0][0] - LarTex)
-        print(Pantalla.pos(1, 2), ("─" * largot))
-        print(Pantalla.pos(izquierda - 10, 1), 'Usuario:')
-        print(Pantalla.pos(izquierda - 1, 1), texto)
+        print(Pantalla.pos(1, 1), str(Color.f) + str(Color.defecto) + str(Color.Azul) + str(Color.FVerde) + (" " * largot))
+        print(Pantalla.pos(izquierda - 10, 1), 'Usuario: ')
+        print(Pantalla.pos(izquierda - 1, 1), texto + '\033[0;m')
 
 
-Pantalla.titulo('bienvenidos', col=8, fila=3, estilo=Color.Negrita, color=Color.Rojo)
-Pantalla.encabezado('Diego Martin Otero Varela')
+Pantalla.titulo('bienvenidos', fila=39, estilo=Color.Negrita, color=Color.Rojo, fondo=Color.FVerde)
+Pantalla.encabezado('Diego')
 
 
-
-input()
+esc = input()
+print(esc)
