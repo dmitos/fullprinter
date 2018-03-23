@@ -10,11 +10,13 @@ Proximamente la idea es tablas y listas y boxes
 ## titulo
 
 ej:
-_________________________________________
+...................................
 		TEXTO
-_________________________________________
+...................................
 
-Pantalla.titulo(texto, col, fila, linea, estilo, color, fondo):
+- Texto que sale entre dos lineas centradas y ubicadas en posicion x, y.
+
+Pantalla.titulo(texto, col, fila, linea, estilo, color, fondo)
 
 texto: <string> texto que aparezca
 
@@ -29,3 +31,15 @@ estilo : class Color
 color : class Color
 
 fondo : class Color
+
+## Encabezado
+
+ej:
+			Texto
+.............................
+
+- Es un texto que sale en la parte superior sobre una linea.
+
+Pantalla.encabezado(texto)
+
+texto: <string> texto que aparezca
