@@ -9,6 +9,11 @@ Proximamente la idea es tablas y listas y boxes
 
 ## titulo
 
+ej:
+-----------------------------------------
+		TEXTO
+-----------------------------------------
+
 Pantalla.titulo(texto, col, fila, linea, estilo, color, fondo):
 
 texto: <string> texto que aparezca
