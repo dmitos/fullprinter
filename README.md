@@ -18,13 +18,13 @@ ej:
 
 Pantalla.titulo(texto, col, fila, linea, estilo, color, fondo)
 
-texto: <string> texto que aparezca
+texto: (string) texto que aparezca
 
-col: <numero> no mayor a la cantidad de columnas de la terminal
+col: (numero) no mayor a la cantidad de columnas de la terminal
 
-fila : <numero> no mayor a la cantidad de filas de la pantalla
+fila : (numero) no mayor a la cantidad de filas de la pantalla
 
-linea : <string> que tipo de caracter quiere q se como linea
+linea : (string) que tipo de caracter quiere q se como linea
 
 estilo : class Color
 
@@ -42,4 +42,4 @@ ej:
 
 Pantalla.encabezado(texto)
 
-texto: <string> texto que aparezca
+texto: (string) texto que aparezca
