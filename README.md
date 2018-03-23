@@ -8,7 +8,7 @@ Proximamente la idea es tablas y listas y boxes
 
 
 ## titulo
-<<<<<<< HEAD
+HEAD
 Pantalla.titulo(texto, col, fila, linea, estilo, color, fondo):
 
 texto: <string> texto que aparezca
@@ -33,4 +33,4 @@ fondo : class Color
 - estilo : class Color
 - color : class Color
 - fondo : class Color
->>>>>>> origin/completarcosas
+
