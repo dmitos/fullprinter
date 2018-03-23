@@ -1,7 +1,7 @@
-# fullprinter
+# FULLPRINTER
 
-simple funciones para generar titulos en pantalla de la terminal
-ayuda la clase Colorama ;)
+Simple funciones para generar salidas mas adornadas en pantalla de la terminal
+Ayuda la clase Colorama ;)
 
 Por el momento solo permite encabezado y un titulo
 Proximamente la idea es tablas y listas y boxes
