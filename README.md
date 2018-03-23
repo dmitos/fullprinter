@@ -10,9 +10,9 @@ Proximamente la idea es tablas y listas y boxes
 ## titulo
 
 ej:
------------------------------------------
+_________________________________________
 		TEXTO
------------------------------------------
+_________________________________________
 
 Pantalla.titulo(texto, col, fila, linea, estilo, color, fondo):
 

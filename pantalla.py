@@ -78,8 +78,7 @@ class Pantalla:
         pass
 
 
-
-# Pantalla.titulo('bienvenidos', fila=23, col=80, estilo=Color.Negrita,
+# Pantalla.titulo('TEXTO', fila=3, col=10, estilo=Color.Negrita,
 #                 color=Color.Rojo, fondo=Color.FVerde)
 # Pantalla.encabezado('Diego')
 
