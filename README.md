@@ -7,7 +7,7 @@ Por el momento solo permite encabezado y un titulo
 Proximamente la idea es tablas y listas y boxes
 
 
-## titulo
+## TITULO
 
 ej:
 ...................................
@@ -32,7 +32,7 @@ color : class Color
 
 fondo : class Color
 
-## Encabezado
+## ENCABEZADO
 
 ej:
 			Texto
