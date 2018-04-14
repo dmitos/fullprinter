@@ -18,3 +18,4 @@ def ObtTamTer():
 # size = ObtTamTer()
 # print(size[0][0], ' - ', size[0][1])
 # comentario a borrar
+# otro comentario al dope
